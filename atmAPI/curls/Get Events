@@ -1,0 +1,2 @@
+curl --location --request GET '
+http://localhost:8085/atmAPI/process/checkBalance/1a2196f9-cbf8-4d68-b4be-3ae9934d44a3/100002'

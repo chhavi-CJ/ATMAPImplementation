@@ -1,0 +1,23 @@
+curl --location --request POST 'http://localhost:8085/atmAPI/process/CREATE/account' \
+--header 'Content-Type: application/json' \
+--data-raw '
+{
+    "account_number": "100001",
+	"name": "chhavi",
+	"ac_type": "savings",
+	"card_num": "83154000",
+	"unique_pin": "0000",
+	"balance": "1000"
+}'
+
+curl --location --request POST 'http://localhost:8085/atmAPI/process/gettoken' \
+--header 'Content-Type: application/json' \
+--data-raw '
+{
+     "account_number": "100001",
+	"name": "chhavi",
+	"unique_pin": "0000"
+}'
+
+
+
